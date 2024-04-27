@@ -8,7 +8,7 @@
     --first-color: hsl(144, 50%, 20%);
     --first-color-alt: hsl(126, 17%, 37%);
     --first-color-light: hsl(128, 18%, 52%);
-    --title-color: hsl(36, 43%, 93%);
+    --title-color: hsl(42, 39%, 85%);
     --text-color: hsl(42, 39%, 85%);
     --white-color: hsl(228, 8%, 98%);
     --black-color: hsl(228, 6%, 4%);
@@ -21,7 +21,7 @@
 
     /*========== Font and typography ==========*/
     /*.5rem = 8px | 1rem = 16px ...*/
-    --body-font: "Montserrat", sans-serif;
+    --body-font: "Imbue", sans-serif;
     --biggest-font-size: 2.25rem;
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
@@ -86,4 +86,32 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+
+/*=============== NAVBAR ===============*/
+.nav{
+    position: relative;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo,
+.nav__close,
+.nav__toggle{
+    display: flex;
+    color: var(--title-color);
+    cursor: pointer;
+}
+
+.nav__logo image{
+    width: 24px;
+    height: 24px;
+}
+
+.nav__logo i{
+    font-size: 1.25rem;
+    font-weight: initial;
 }
