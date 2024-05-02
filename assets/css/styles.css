@@ -21,7 +21,7 @@
 
     /*========== Font and typography ==========*/
     /*.5rem = 8px | 1rem = 16px ...*/
-    --body-font: "Imbue", sans-serif;
+    --body-font: "Imbue", "Arial";
     --biggest-font-size: 2.25rem;
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
@@ -39,7 +39,7 @@
     --z-fixed: 100;
 }
 
-/*========== Responsive typography ==========*/
+/*========== Responsive typography ==========
 @media screen and (min-width: 1150px) {
     :root {
         --biggest-font-size: 4.25rem;
@@ -50,13 +50,8 @@
         --small-font-size: .875rem;
     }
 }
-
+*/
 /*=============== BASE ===============*/
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
 
 html {
     scroll-behavior: smooth;
@@ -80,6 +75,7 @@ ul {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 img {
@@ -88,7 +84,81 @@ img {
     height: 50px;
 }
 
-/*=============== REUSABLE CSS CLASSES ===============*/
+/*=============== Utility classes ===============*/
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.grid {
+    display: grid;
+    gap: var(--gap, 1rem);
+}
+
+.container {
+    padding-inline: 2rem;
+    max-width: 80rem;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/*=============== primary header ===============*/
+.nav__logo {
+    margin: 2rem;
+}
+
+.primary-header {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    background: hsl(0 0% 0% / 0.5);
+}
+
+@supports (backdrop-filter: blur(1rem)) {
+    .nav__list{
+        background: hsl(0 0% 100% / 0.1);
+        backdrop-filter: blur(1rem);
+    }
+}
+
+.nav__list a {
+    text-decoration: none;
+}
+
+.nav__list a > span {
+    font-weight: 700;
+    margin-inline-end: .75rem;
+}
+
+@media (max-width: 35rem) {
+    .nav__list {
+        --gap: 2rem;
+        position: fixed;
+        inset: 0 0 0 30%;
+        flex-direction: column;
+        padding: min(30vh, 10rem) 2rem;
+    }
+}
+
+
+/*=============== REUSABLE CSS CLASSES ===============
 .container {
     max-width: 1120px;
     margin-inline: 1.5rem;
@@ -112,9 +182,9 @@ img {
 
 .main {
     overflow: hidden;
-}
+} */
 
-/*=============== NAVBAR ===============*/
+/*=============== NAVBAR 1 ===============
 .header{
     position:  fixed;
     width: 100%;
@@ -153,7 +223,7 @@ img {
 }
 
 
-/* Navigation for mobile devices */
+/* Navigation for mobile devices
 @media  screen and (max-width: 1150px){
     .nav__menu{
         position: fixed;
@@ -189,4 +259,5 @@ img {
     top: 1.15rem;
     right: 1.15rem;
     font-size: 1.25rem;
-}
+} */
+
