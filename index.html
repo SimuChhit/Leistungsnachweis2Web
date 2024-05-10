@@ -5,52 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- css -->
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.min.css">
-
     <!-- Icon and Titel-->
     <link rel="shortcut icon" href="assets/images/BambooBreezeMagazinLogo.png">
+
     <title>BambooBreezeMagazine</title>
 </head>
 
 <body>
-<header class="primary-header flex">
-    <div class="nav__logo">
-        <img src="assets/images/BambooBreezeMagazinLogo.png">
-    </div>
-    <button class="nav__mobile__Toggle" aria-controls="nav__control" aria-expanded="false"><span
-            class="sr-only">Menu</span></button>
-
+<header>
     <nav class="nav container">
-        <ul id="nav__control" class="nav__list flex">
+        <div class="nav__logo">
+            <img src="assets/images/BambooBreezeMagazinLogo.png">
+        </div>
+
+        <ul class=nav__ItemsContainer id="nav__control">
             <li class="nav__item">
-                <a href="" class="nav__link">
-                    <span aria-hidden="true">00</span>Home
-                </a>
+                <a href="" class="nav__link">Home</a>
             </li>
 
             <li class="nav__item">
-                <a href="" class="nav__link">
-                    <span aria-hidden="true">01</span>Magazins
-                </a>
+                <a href="" class="nav__link">Carousel</a>
             </li>
 
             <li class="nav__item">
-                <a href="" class="nav__link">
-                    <span aria-hidden="true">02</span>About
-                </a>
+                <a href="" class="nav__link">Products</a>
             </li>
 
             <li class="nav__item">
-                <a href="" class="nav__link">
-                    <span aria-hidden="true">03</span>Contact
-                </a>
+                <a href="" class="nav__link">Contact</a>
             </li>
         </ul>
     </nav>
 </header>
-
 <main>
-
+    <!-- carousel -->
+    <div class="carousel__container">
+        <!-- list item -->
+        <div class="carousel__list">
+            <div class="carousel__item">
+                <img src="assets/images/BreatheDeeply.png" alt="">
+                <div class="content">
+                    <div class="author">Simon Chhit</div>
+                    <div class="Title">BambooBreezeMagaziny</div>
+                    <div class="topic">BreethDeeply</div>
+                    <div class="des">A short story what you about to read and see on this Page</div>
+                    <div class="carousel__button">
+                        <button>See More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel__item">
+                <img src="assets/images/SinneBenebelt.jpg" alt="">
+                <div class="content">
+                    <div class="author">Simon Chhit</div>
+                    <div class="Title">Products</div>
+                    <div class="topic">IceTea</div>
+                    <div class="des">enjoy the fresh homemade tea without any sugar</div>
+                    <div class="carousel__button">
+                        <button>See More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel__item">
+                <img src="assets/images/MoreThanIShould.png" alt="">
+                <div class="content">
+                    <div class="author">Simon Chhit</div>
+                    <div class="Title">Dirtyfinish</div>
+                    <div class="topic">Cars</div>
+                    <div class="des">Car events, mountain tours</div>
+                    <div class="carousel__button">
+                        <button>See More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 </main>
 <footer>
 
