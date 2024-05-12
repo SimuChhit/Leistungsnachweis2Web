@@ -40,84 +40,120 @@
     </nav>
 </header>
 <main>
+    <!-- Home/magazin -->
     <!-- carousel -->
-    <div class="carousel__container next prev">
-        <!-- list item -->
-        <div class="carousel__list">
-            <div class="carousel__item" id="carousel-item-1">
-                <img src="assets/images/1.png">
-                <div class="content">
-                    <div class="author">Simon Chhit</div>
-                    <div class="title">BambooBreezeMagaziny</div>
-                    <div class="topic">BreethDeeply</div>
-                    <div class="des">A short story what you about to read and see on this Page</div>
-                    <div class="carousel__buttons">
-                        <button class="carousel__button">See More</button>
+    <section>
+        <div class="carousel__container next prev">
+            <!-- list item -->
+            <div class="carousel__list">
+                <div class="carousel__item" id="carousel-item-3">
+                    <img src="assets/images/1.png">
+                    <div class="content">
+                        <div class="author">Simon Chhit</div>
+                        <div class="title">BambooBreezeMagaziny</div>
+                        <div class="topic">BreethDeeply</div>
+                        <div class="des">A short story what you about to read and see on this Page</div>
+                        <div class="carousel__buttons">
+                            <button class="carousel__button">See More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__item" id="carousel-item-2">
+                    <img src="assets/images/2.png">
+                    <div class="content">
+                        <div class="author">Simon Chhit</div>
+                        <div class="title">Products</div>
+                        <div class="topic">IceTea</div>
+                        <div class="des">enjoy the fresh homemade tea without any sugar</div>
+                        <div class="carousel__buttons">
+                            <button class="carousel__button">See More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel__item" id="carousel-item-1">
+                    <img src="assets/images/3.png">
+                    <div class="content">
+                        <div class="author">Simon Chhit</div>
+                        <div class="title">Dirtyfinish</div>
+                        <div class="topic">Cars</div>
+                        <div class="des">Car events, mountain tours</div>
+                        <div class="carousel__buttons">
+                            <button class="carousel__button">See More</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="carousel__item" id="carousel-item-2">
-                <img src="assets/images/2.png">
-                <div class="content">
-                    <div class="author">Simon Chhit</div>
-                    <div class="title">Products</div>
-                    <div class="topic">IceTea</div>
-                    <div class="des">enjoy the fresh homemade tea without any sugar</div>
-                    <div class="carousel__buttons">
-                        <button class="carousel__button">See More</button>
+            <!-- thumbnail -->
+            <div class="thumbnail">
+                <div class="thumbnail__item" data-target="#carousel-item-1">
+                    <img src="assets/images/SinneBenebelt.jpg">
+                    <div class="content">
+                        <div class="title">
+                            Name Slider
+                        </div>
+                        <div class="des">
+                            Description
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="carousel__item" id="carousel-item-3">
-                <img src="assets/images/3.png">
-                <div class="content">
-                    <div class="author">Simon Chhit</div>
-                    <div class="title">Dirtyfinish</div>
-                    <div class="topic">Cars</div>
-                    <div class="des">Car events, mountain tours</div>
-                    <div class="carousel__buttons">
-                        <button class="carousel__button">See More</button>
+                <div class="thumbnail__item" data-target="#carousel-item-2">
+                    <img src="assets/images/MoreThanIShould.png">
+                    <div class="content">
+                        <div class="title">
+                            Name Slider
+                        </div>
+                        <div class="des">
+                            Description
+                        </div>
+                    </div>
+                </div>
+                <div class="thumbnail__item" data-target="#carousel-item-3">
+                    <img src="assets/images/BreatheDeeply.png">
+                    <div class="content">
+                        <div class="title">
+                            Name Slider
+                        </div>
+                        <div class="des">
+                            Description
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- thumbnail -->
-        <div class="thumbnail">
-            <div class="thumbnail__item" data-target="#carousel-item-1">
-                <img src="assets/images/SinneBenebelt.jpg">
-                <div class="content">
-                    <div class="title">
-                        Name Slider
-                    </div>
-                    <div class="des">
-                        Description
-                    </div>
-                </div>
+    </section>
+
+    <!-- product page-->
+    <section class="section__products" id="products">
+        <div class="product__container container grid">
+            <div class="product__data">
+                <h2 class="section__title">
+                    ZUR LOTUS TEA <br> YOUR BALANCE
+                </h2>
+
+                <p class="product__description">
+                    Select the right refreshment for your wellbeing, enjoy every second with our Ice Tea
+                </p>
             </div>
-            <div class="thumbnail__item" data-target="#carousel-item-2">
-                <img src="assets/images/MoreThanIShould.png">
-                <div class="content">
-                    <div class="title">
-                        Name Slider
-                    </div>
-                    <div class="des">
-                        Description
-                    </div>
-                </div>
-            </div>
-            <div class="thumbnail__item" data-target="#carousel-item-3">
-                <img src="assets/images/BreatheDeeply.png">
-                <div class="content">
-                    <div class="title">
-                        Name Slider
-                    </div>
-                    <div class="des">
-                        Description
-                    </div>
-                </div>
+
+            <div class="product__content grid">
+                <article class="product__card">
+                    <img src="#">
+                    <h2 class="new__title">Zen</h2>
+                </article>
+
+                <article class="new__card">
+                    <img src="#">
+                    <h2 class="new__title">Essence</h2>
+                </article>
+
+                <article class="new__card">
+                    <img src="#">
+                    <h2 class="new__title">Pure</h2>
+                </article>
             </div>
         </div>
-    </div>
+    </section>
+
 </main>
 <footer>
 

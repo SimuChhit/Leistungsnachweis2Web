@@ -127,6 +127,13 @@ header {
     position: relative;
 }
 
+.carousel__item {
+    display: none;
+}
+.carousel__item.active {
+    display: block;
+}
+
 .carousel__container .carousel__list .carousel__item {
     position: absolute;
     inset: 0 0 0 0;

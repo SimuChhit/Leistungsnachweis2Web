@@ -1,13 +1,23 @@
-document.querySelectorAll('.thumbnail__item').forEach(item => {
-    item.addEventListener('click', function() {
-        const targetId = this.getAttribute('data-target');
-        const carouselItems = document.querySelectorAll('.carousel__item');
-        carouselItems.forEach(item => {
-            item.classList.remove('active');  // Entfernt die 'active' Klasse
-            if (item.id === targetId.substring(1)) {
-                item.classList.add('active');  // Fügt die 'active' Klasse hinzu
-                // Starte Animation durch Hinzufügen einer spezifischen Klasse
-                item.classList.add('start-animation');
+document.addEventListener("DOMContentLoaded", function() {
+    // Selektiert alle Thumbnail-Items
+    const thumbnails = document.querySelectorAll('.thumbnail__item');
+
+    // Fügt jedem Thumbnail-Item einen Click-Event-Listener hinzu
+    thumbnails.forEach(thumbnail => {
+        thumbnail.addEventListener('click', function() {
+            // Liest das 'data-target' Attribut des geklickten Thumbnails
+            const targetId = this.getAttribute('data-target');
+
+            // Selektiert das aktive Carousel-Item und entfernt die Klasse 'active'
+            const activeItem = document.querySelector('.carousel__item.active');
+            if (activeItem) {
+                activeItem.classList.remove('active');
+            }
+
+            // Findet das Carousel-Item, das dem 'data-target' entspricht, und fügt die Klasse 'active' hinzu
+            const targetItem = document.querySelector(targetId);
+            if (targetItem) {
+                targetItem.classList.add('active');
             }
         });
     });
