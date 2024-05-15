@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <!-- Icon and Titel-->
     <link rel="shortcut icon" href="assets/images/BambooBreezeMagazinLogo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.min.css">
+
 
     <script src="assets/js/main.js"></script>
 
@@ -20,33 +22,43 @@
             <img src="assets/images/BambooBreezeMagazinLogo.png">
         </div>
 
-        <ul class=nav__ItemsContainer id="nav__control">
-            <li class="nav__item">
-                <a href="" class="nav__link">Home</a>
-            </li>
+        <div class="nav__menu">
+            <ul class=nav__ItemsContainer id="nav__control">
+                <li class="nav__item">
+                    <a href="" class="nav__link">Home</a>
+                </li>
 
-            <li class="nav__item">
-                <a href="" class="nav__link">Carousel</a>
-            </li>
+                <li class="nav__item">
+                    <a href="" class="nav__link">Carousel</a>
+                </li>
 
-            <li class="nav__item">
-                <a href="" class="nav__link">Products</a>
-            </li>
+                <li class="nav__item">
+                    <a href="" class="nav__link">Products</a>
+                </li>
 
-            <li class="nav__item">
-                <a href="" class="nav__link">Contact</a>
-            </li>
-        </ul>
+                <li class="nav__item">
+                    <a href="" class="nav__link">Contact</a>
+                </li>
+            </ul>
+
+            <div class="nav__close" id="nav-close">
+                <i class="ri-close-line"></i>
+            </div>
+        </div>
+        <!-- Toggle button-->
+        <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+        </div>
     </nav>
 </header>
 <main>
     <!-- Home/magazin -->
-    <!-- carousel -->
-    <section>
-        <div class="carousel__container next prev">
+    <!-- magazin -->
+    <section class="magazin__section">
+        <div class="magazin__container next prev">
             <!-- list item -->
-            <div class="carousel__list">
-                <div class="carousel__item" id="carousel-item-3">
+            <div class="magazin__list">
+                <div class="magazin__item" id="magazin-item-3">
                     <img src="assets/images/1.png">
                     <div class="content">
                         <div class="author">Simon Chhit</div>
@@ -58,7 +70,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel__item" id="carousel-item-2">
+                <div class="magazin__item" id="magazin-item-2">
                     <img src="assets/images/2.png">
                     <div class="content">
                         <div class="author">Simon Chhit</div>
@@ -70,7 +82,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel__item" id="carousel-item-1">
+                <div class="magazin__item" id="magazin-item-1">
                     <img src="assets/images/3.png">
                     <div class="content">
                         <div class="author">Simon Chhit</div>
@@ -85,36 +97,36 @@
             </div>
             <!-- thumbnail -->
             <div class="thumbnail">
-                <div class="thumbnail__item" data-target="#carousel-item-1">
+                <div class="thumbnail__item" data-target="#magazin-item-1">
                     <img src="assets/images/SinneBenebelt.jpg">
                     <div class="content">
                         <div class="title">
-                            Name Slider
+                            Blablabla
                         </div>
                         <div class="des">
-                            Description
+                            Blablabla
                         </div>
                     </div>
                 </div>
-                <div class="thumbnail__item" data-target="#carousel-item-2">
+                <div class="thumbnail__item" data-target="#magazin-item-2">
                     <img src="assets/images/MoreThanIShould.png">
                     <div class="content">
                         <div class="title">
-                            Name Slider
+                            Blablabla
                         </div>
                         <div class="des">
-                            Description
+                            Blablabla
                         </div>
                     </div>
                 </div>
-                <div class="thumbnail__item" data-target="#carousel-item-3">
+                <div class="thumbnail__item" data-target="#magazin-item-3">
                     <img src="assets/images/BreatheDeeply.png">
                     <div class="content">
                         <div class="title">
-                            Name Slider
+                            Blablabla
                         </div>
                         <div class="des">
-                            Description
+                            Blablabla
                         </div>
                     </div>
                 </div>
