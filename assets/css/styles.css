@@ -2,9 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,100..900&display=swap');
 
 :root {
-    /* --header-height: 3.5rem;*/
     /*========== Colors ==========*/
-    /*Color mode HSL(hue, saturation, lightness)*/
     --first-color: hsl(126, 17%, 37%);
     --first-color-alt: hsl(118, 12%, 51%);
     --first-color-light: hsl(118, 12%, 51%);
@@ -24,7 +22,6 @@
     hsla(93, 40%, 30%));
 
     /*========== Font and typography ==========*/
-    /*.5rem = 8px | 1rem = 16px ...*/
     --body-font: "Imbue", "Arial";
     --biggest-font-size: 2.25rem;
     --h1-font-size: 1.5rem;
@@ -58,7 +55,7 @@ a {
     color: var(--text-color);
 }
 
-/* Standard Desktop-Stile (bereits definiert) */
+/* Standard Desktop-Stile */
 header {
     width: 1040px;
     max-width: 80%;
@@ -69,7 +66,7 @@ header {
     z-index: 100;
 }
 
-.nav__menu{
+.nav__menu {
     display: flex;
 }
 
@@ -181,6 +178,10 @@ header {
         z-index: 111;
     }
 
+    .nav__menu--visible {
+        right: 0;
+    }
+
     .nav__close,
     .nav__toggle {
         display: flex;
@@ -212,7 +213,6 @@ header {
     }
 
 
-
     .magazin__container {
         margin-top: -20px;
     }
@@ -235,8 +235,8 @@ header {
         width: 100px;
         height: 180px;
     }
-}
 
+}
 
 
 /*========== magazin ==========*/
@@ -331,7 +331,8 @@ header {
 }
 
 .thumbnail__item:hover {
-    color: var(--shadow-light);
+    transform: translateY(-.5rem);
+    box-shadow: 2px 4px 8px rgba(221, 248, 206, 0.4);
 }
 
 .thumbnail .thumbnail__item {
@@ -339,6 +340,7 @@ header {
     height: 220px;
     flex-shrink: 0;
     position: relative;
+    border-radius: 8px;
 }
 
 .thumbnail__item img {

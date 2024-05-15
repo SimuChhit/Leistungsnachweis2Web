@@ -22,3 +22,23 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const navMenu = document.getElementById('nav-menu');
+    const navToggle = document.getElementById('nav-toggle');
+    const navClose = document.getElementById('nav-close');
+
+    // Show the nav menu when nav toggle button is clicked
+    if (navToggle) {
+        navToggle.addEventListener('click', function() {
+            navMenu.classList.add('nav__menu--visible');
+        });
+    }
+
+    // Hide the nav menu when nav close button is clicked
+    if (navClose) {
+        navClose.addEventListener('click', function() {
+            navMenu.classList.remove('nav__menu--visible');
+        });
+    }
+});
