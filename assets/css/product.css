@@ -1,0 +1,37 @@
+.product__data{
+    text-align: center;
+}
+
+.product__container{
+    row-gap: 7.5rem;
+}
+
+.product__content{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.product__card{
+    position: relative;
+    width: 200px;
+    background: var(--gradient);
+    padding: 9rem .75rem 1.5rem .75rem;
+    border: 2px solid   var(--first-color);
+    border-radius: 1.5rem;
+}
+
+.product__image{
+    position: absolute;
+    top: -4.5rem;
+    left: 0;
+    right: 0;
+    width: 400px;
+    margin: 0 auto;
+    transition: transform .4s;
+}
+
+.product__title{
+    font-size: var(--h2-font-size);
+    text-align: center;
+}
+
