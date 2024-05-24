@@ -1,0 +1,16 @@
+
+.viewport__container{
+    width: 100vw;
+    height: 40vh;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+
+.viewport__image{
+    object-fit: cover;
+    filter: brightness(20%);
+}
