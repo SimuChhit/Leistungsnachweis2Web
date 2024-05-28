@@ -1,0 +1,57 @@
+.forms__container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.input__container {
+    position: relative;
+    width: 30rem;
+    background: red;
+}
+
+.input__box form {
+    width: 100%;
+
+}
+
+.register__titel {
+    font-size: 2em;
+    text-align: center;
+    color: var(--title-color);
+}
+
+.input__box {
+    position: relative;
+    margin: .5rem 0;
+}
+
+.input__box input {
+    width: 80%;
+    height: 2.5rem;
+    background: transparent;
+    border: 2px solid;
+    outline: none;
+    border-radius: 2rem;
+    font-size: 1em;
+    color: var(--title-color);
+    padding: 0 3%;
+}
+
+.input__box label {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    transform: translateY(-20%);
+    font-size: 1.5em;
+    color: var(--title-color);
+    pointer-events: none;
+}
+
+.register__button{
+    width: 70%;
+}
