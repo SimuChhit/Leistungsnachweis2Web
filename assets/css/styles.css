@@ -142,7 +142,7 @@ header {
         background-color: hsla(228, 24%, 6%, .2);
         backdrop-filter: blur(16px);
         -webkit-backdrop-filter: blur(16px);
-        width: 80%;
+        width: 30%;
         height: 100%;
         padding: 2rem 2rem 0;
         transition: right .4s;
@@ -184,30 +184,31 @@ header {
         box-shadow: none;
         transition: none;
 
-    .nav__ItemsContainer {
-        flex-direction: column;
-        padding: .5rem;
-    }
+        .nav__ItemsContainer {
+            flex-direction: column;
+            padding: .5rem;
+        }
 
-    .nav__item {
-        margin-bottom: 10px;
-        margin-right: 0;
-    }
+        .nav__item {
+            margin-bottom: 10px;
+            margin-right: 0;
+        }
 
-    .magazin__container {
-        margin-top: -30px;
-    }
+        .magazin__container {
+            margin-top: -30px;
+        }
 
-    .magazin__container .magazin__list .magazin__item .content {
-        padding-right: 20%;
-    }
+        .magazin__container .magazin__list .magazin__item .content {
+            padding-right: 20%;
+        }
 
-    .magazin__container .magazin__list .magazin__item .content .title,
-    .magazin__container .magazin__list .magazin__item .content .topic {
-        font-size: 4em;
+        .magazin__container .magazin__list .magazin__item .content .title,
+        .magazin__container .magazin__list .magazin__item .content .topic {
+            font-size: 4em;
+        }
     }
 
     .nav.container:hover {
-        box-shadow: none; /* Hover-Effekt deaktiviert für mobile Ansicht */
+        box-shadow: none;
     }
 }
