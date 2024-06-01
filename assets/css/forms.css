@@ -1,3 +1,5 @@
+
+/*========== Forms style==========*/
 .forms__container {
     margin: 0;
     padding: 0;
@@ -58,4 +60,34 @@
     width: 5.5rem;
     height: 1.5rem;
     border-radius: 2rem;
+}
+
+
+/* Kleine Geräte (Handys, 600px und kleiner) */
+@media (max-width: 600px) {
+    .input__container {
+        width: 90%; /* Breite auf 90% des Bildschirms setzen */
+        padding: 1.5rem; /* Weniger Padding */
+        border-radius: 1rem; /* Kleinere Abrundung */
+    }
+
+    .register__titel {
+        font-size: 1.5em; /* Kleinere Schriftgröße */
+    }
+
+    .input__box input {
+        width: 100%; /* Breite auf 100% der Containerbreite setzen */
+        height: 2rem; /* Kleinere Höhe */
+        font-size: 0.9em; /* Kleinere Schriftgröße */
+    }
+
+    .input__box label {
+        font-size: 1em; /* Kleinere Schriftgröße */
+    }
+
+    .register__button {
+        width: 100%; /* Breite auf 100% der Containerbreite setzen */
+        height: 2.5rem; /* Größere Höhe für bessere Klickbarkeit auf mobilen Geräten */
+        font-size: 1em; /* Schriftgröße anpassen */
+    }
 }
