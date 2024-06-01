@@ -8,8 +8,13 @@
     text-align: center;
 }
 
-.product__title{
-    font-size: var(--h1-font-size);
+.product__title {
+    font-size: 15rem;
+}
+
+.product__description{
+    font-size: var(--h3-font-size);
+    padding-bottom: 3.5rem;
 }
 
 .product__content {
@@ -34,6 +39,7 @@
     width: 150%;
     height: auto;
     top: -30%;
+    transition: transform 0.8s ease;
 }
 
 .product__title {
@@ -41,6 +47,23 @@
     text-align: center;
 }
 
+.product__card:nth-child(odd){
+    rotate: -5deg;
+}
 
+.product__card:nth-child(eve){
+    justify-self: flex-end;
+    rotate: 5deg;
+}
 
-/*========== product motion ==========*/
+.product__card:nth-child(1):hover .product__image{
+    transform: translateY(-1.5rem) rotate(-10deg);
+}
+
+.product__card:nth-child(2):hover .product__image{
+    transform: translateY(-1.5rem) rotate(10deg);
+}
+
+.product__card:nth-child(3):hover .product__image{
+    transform: translateY(1rem) rotate(-5deg);
+}

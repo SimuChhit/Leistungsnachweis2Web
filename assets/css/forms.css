@@ -12,6 +12,8 @@
     position: relative;
     width: 30rem;
     background: red;
+    padding: 2.5rem;
+    border-radius: 2rem;
 }
 
 .input__box form {
@@ -34,7 +36,7 @@
     width: 80%;
     height: 2.5rem;
     background: transparent;
-    border: 2px solid;
+    border: .2rem solid;
     outline: none;
     border-radius: 2rem;
     font-size: 1em;
@@ -53,5 +55,7 @@
 }
 
 .register__button{
-    width: 70%;
+    width: 5.5rem;
+    height: 1.5rem;
+    border-radius: 2rem;
 }
