@@ -1,5 +1,9 @@
 
 /*========== Product style==========*/
+.products__section{
+    padding: 2rem;
+}
+
 .product__container {
     row-gap: 7.5rem;
 }

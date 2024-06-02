@@ -14,9 +14,10 @@
     --first-color-light-transparent: hsla(125, 16%, 59%, 0.61);
     --title-color: hsl(98, 33%, 84%);
     --text-color: hsl(36, 43%, 93%);
-    --white-color: hsl(228, 8%, 98%);
+    --white-color: hsl(180, 9%, 98%);
     --black-color: hsl(228, 6%, 4%);
     --body-color: hsl(228, 6%, 8%);
+    --textbackground: hsla(118, 12%, 51%, 0.24);
     --container-color: hsl(228, 6%, 12%);
     --container-color2: hsl(100, 95%, 7%);
     --shadow: 0 0 48px hsla(93, 54%, 54%, .4);
