@@ -1,8 +1,12 @@
 
 /*========== Product style==========*/
 .products__section{
-    padding: 2rem;
+    padding: 5rem;
+    box-shadow: 0 -20px 30px 2px rgba(255, 255, 255, 0.1), 0 10px 30px 2px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    z-index: 49;
 }
+
 
 .product__container {
     row-gap: 7.5rem;
