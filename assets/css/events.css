@@ -2,15 +2,15 @@
     padding: 2rem;
     margin: 0;
     box-sizing: border-box;
-    text-align: center; /* Zentrum des Textes */
+    text-align: center;
 }
 
 .event__section h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center; /* Text zentriert */
-    font-size: 2rem; /* Schriftgröße für größere Bildschirme */
+    text-align: center;
+    font-size: 2rem;
     margin-bottom: 2rem;
 }
 
@@ -19,7 +19,7 @@ img {
     height: auto;
     vertical-align: middle;
     display: inline-block;
-    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out; /* Längere Übergangsdauer für den Zoom und Schatten */
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 
 .event__container > div {
@@ -36,8 +36,8 @@ img {
 }
 
 .event__container > div:hover > img {
-    transform: scale(1.1) rotate(2deg); /* Zoom- und Rotationseffekt bei Hover */
-    box-shadow: 0 10px 20px var(--first-color-light-transparent); /* Leichter Schatten bei Hover */
+    transform: scale(1.1) rotate(2deg);
+    box-shadow: 0 10px 20px var(--first-color-light-transparent);
 }
 
 .event__container {
@@ -64,7 +64,7 @@ img {
 /* Kleine Geräte (Handys, 600px und kleiner) */
 @media (max-width: 600px) {
     .event__section h1 {
-        font-size: 1.5rem; /* Kleinere Schriftgröße für mobile Geräte */
+        font-size: 1.5rem;
     }
 
     .event__container {
