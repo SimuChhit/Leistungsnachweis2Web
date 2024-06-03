@@ -7,6 +7,10 @@
     box-sizing: border-box;
     background: var(--first-color-light-transparent);
     min-height: 50vh;
+    box-shadow: 0 -20px 30px 2px rgba(255, 255, 255, 0.1), 0 10px 30px 2px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    position: relative;
+    z-index: 49;
 }
 
 .forms__container{
