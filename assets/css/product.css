@@ -18,7 +18,7 @@
 }
 
 .product__title {
-    font-size: 15rem;
+    font-size: var(--h1-font-size);
 }
 
 .product__description{
