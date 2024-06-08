@@ -1,0 +1,80 @@
+/*========== Magazin style==========*/
+
+.table__section {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+
+.table__container {
+    min-height: 50vh;
+    min-width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.13);
+    backdrop-filter: blur(2rem);
+    box-shadow: 0 .4rem .8rem rgba(197, 197, 197, 0.33);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.table__header {
+    margin-bottom: .5rem;
+}
+
+table th, table td {
+    padding: 1rem;
+    border: 2px solid rgba(221, 221, 221, 0.22);
+    border-radius: 1rem;
+    transition: all 0.7s ease-in-out;
+}
+
+th {
+    background-color: var(--first-color-light);
+}
+
+table td:hover {
+    transform: scale(0.8);
+    background-color: var(--first-color-light);
+}
+
+
+/* Kleine Geräte (Handys, 600px und kleiner) */
+@media (max-width: 600px) {
+    .table__section {
+        height: auto;
+        padding: 1rem;
+    }
+
+    .table__container {
+        min-height: 30vh;
+        min-width: 90vw;
+        padding: 0.5rem;
+    }
+
+    .table__header {
+        margin-bottom: .25rem;
+    }
+
+    table th, table td {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    th {
+        font-size: 1rem;
+    }
+
+    table td:hover {
+        transform: scale(0.9);
+    }
+}
+
