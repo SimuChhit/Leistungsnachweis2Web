@@ -11,7 +11,7 @@
 :root {
     /*========== Colors ==========*/
     --first-color: hsl(126, 17%, 37%);
-    --first-color-light: hsl(118, 12%, 51%);
+    --first-color-light: hsla(125, 16%, 59%, 0.49);
     --first-color-light-transparent: hsla(125, 16%, 59%, 0.61);
     --title-color: hsl(98, 33%, 84%);
     --text-color: hsl(36, 43%, 93%);
@@ -32,6 +32,7 @@
     --h3-font-size: 1rem;
     --normal-font-size: .938rem;
     --small-font-size: .813rem;
+    --font-semi-bold: 1rem;
 }
 
 /*========== body & header (navbar) ==========*/

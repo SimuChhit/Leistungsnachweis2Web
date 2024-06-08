@@ -19,9 +19,9 @@
     justify-content: center;
     align-items: center;
     border-collapse: collapse;
-    background-color: rgba(255, 255, 255, 0.13);
+    background: var(--gradient);
     backdrop-filter: blur(2rem);
-    box-shadow: 0 .4rem .8rem rgba(197, 197, 197, 0.33);
+    box-shadow: 0 0.3rem 0 rgba(201, 201, 201, 0.27);
     border-radius: 1rem;
     padding: 1rem;
 }
@@ -30,15 +30,12 @@
     margin-bottom: .5rem;
 }
 
-table th, table td {
+
+table td {
     padding: 1rem;
     border: 2px solid rgba(221, 221, 221, 0.22);
     border-radius: 1rem;
     transition: all 0.7s ease-in-out;
-}
-
-th {
-    background-color: var(--first-color-light);
 }
 
 table td:hover {
