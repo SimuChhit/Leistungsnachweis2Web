@@ -75,3 +75,33 @@ table td:hover {
     }
 }
 
+/* Kleine Geräte (Handys quer) */
+@media (max-width: 850px) {
+    .table__section {
+        height: auto;
+        padding: 1rem;
+    }
+
+    .table__container {
+        min-height: 30vh;
+        min-width: 90vw;
+        padding: 0.5rem;
+    }
+
+    .table__header {
+        margin-bottom: .25rem;
+    }
+
+    table th, table td {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    th {
+        font-size: 1rem;
+    }
+
+    table td:hover {
+        transform: scale(0.9);
+    }
+}

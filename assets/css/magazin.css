@@ -139,6 +139,47 @@
     z-index: 10;
 }
 
+
+
+
+/*========== motion ==========*/
+.magazin__container .magazin__list .magazin__item .author,
+.magazin__container .magazin__list .magazin__item .title,
+.magazin__container .magazin__list .magazin__item .topic,
+.magazin__container .magazin__list .magazin__item .des,
+.magazin__container .magazin__list .magazin__item .magazin__buttons {
+    transform: translateY(50px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContent 0.5s ease 1 forwards;
+}
+
+@keyframes showContent {
+    to {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+
+.magazin__container .magazin__list .magazin__item .title {
+    animation-delay: 0.2s;
+}
+
+.magazin__container .magazin__list .magazin__item .topic {
+    animation-delay: 0.4s;
+}
+
+.magazin__container .magazin__list .magazin__item .des {
+    animation-delay: 0.6s;
+}
+
+.magazin__container .magazin__list .magazin__item .magazin__buttons {
+    animation-delay: 0.8s;
+}
+
+
+
 /* Kleine Geräte (Handys, 600px und kleiner) */
 @media (max-width: 600px) {
 
@@ -178,40 +219,41 @@
 
 }
 
+/* Kleine Geräte (Handys quer) */
+@media (max-width: 850px) {
 
-
-/*========== motion ==========*/
-.magazin__container .magazin__list .magazin__item .author,
-.magazin__container .magazin__list .magazin__item .title,
-.magazin__container .magazin__list .magazin__item .topic,
-.magazin__container .magazin__list .magazin__item .des,
-.magazin__container .magazin__list .magazin__item .magazin__buttons {
-    transform: translateY(50px);
-    filter: blur(20px);
-    opacity: 0;
-    animation: showContent 0.5s ease 1 forwards;
-}
-
-@keyframes showContent {
-    to {
-        opacity: 1;
-        filter: blur(0);
-        transform: translateY(0);
+    .magazin__item .content {
+        padding: 10px;
     }
-}
 
-.magazin__container .magazin__list .magazin__item .title {
-    animation-delay: 0.2s;
-}
+    .magazin__container .magazin__list .magazin__item .content .title,
+    .magazin__container .magazin__list .magazin__item .content .topic {
+        font-weight: bold;
+        font-size: 2.75em;
+        line-height: 1.1em;
+    }
 
-.magazin__container .magazin__list .magazin__item .topic {
-    animation-delay: 0.4s;
-}
+    .magazin__item .content .des {
+        font-size: 1rem;
+    }
 
-.magazin__container .magazin__list .magazin__item .des {
-    animation-delay: 0.6s;
-}
+    .magazin__item .content .author {
+        font-size: 0.75rem;
+        letter-spacing: 0.1em;
+    }
 
-.magazin__container .magazin__list .magazin__item .magazin__buttons {
-    animation-delay: 0.8s;
+    .thumbnail {
+        bottom: -50%;
+        z-index: 50;
+    }
+
+    .thumbnail .thumbnail__item {
+        width: 100px;
+        height: 150px;
+    }
+
+    .thumbnail .thumbnail__item .content .title {
+        font-size: 0.8rem;
+    }
+
 }

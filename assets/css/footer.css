@@ -65,7 +65,7 @@
     font-size: var(--small-font-size);
 }
 
-/* Media Query for mobile devices */
+/* Kleine Geräte (Handys, 600px und kleiner) */
 @media (max-width: 600px) {
     .footer__container {
         display: block;
@@ -79,3 +79,19 @@
         margin-top: 2rem;
     }
 }
+
+/* Kleine Geräte (Handys quer) */
+@media (max-width: 850px) {
+    .footer__container {
+        display: block;
+    }
+
+    .footer__content {
+        display: block;
+    }
+
+    .footer__copy {
+        margin-top: 2rem;
+    }
+}
+

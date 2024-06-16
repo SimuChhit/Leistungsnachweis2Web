@@ -58,8 +58,18 @@
 }
 
 /* Kleine Geräte (Handys, 600px und kleiner) */
-
 @media (max-width: 600px) {
+    .forms__container {
+        width: 90%;
+    }
+
+    .forms__container input {
+        width: 100%;
+    }
+}
+
+/* Kleine Geräte (Handys quer) */
+@media (max-width: 850px) {
     .forms__container {
         width: 90%;
     }
