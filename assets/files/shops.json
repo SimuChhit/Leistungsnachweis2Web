@@ -1,0 +1,22 @@
+[
+  {
+    "location": "Olten",
+    "shopName": "GadgetHub",
+    "contact": "gadethub.olten@store.ch"
+  },
+  {
+    "location": "Solothurn",
+    "shopName": "StyleCorner",
+    "contact": "stylecorner.solothurn@store.ch"
+  },
+  {
+    "location": "Oensingen",
+    "shopName": "HomeEssentials",
+    "contact": "homeessentials.oensingen@store.ch"
+  },
+  {
+    "location": "Kestenholz",
+    "shopName": "FashionSquare",
+    "contact": "fashionsquare.kestenholz@store.ch"
+  }
+]

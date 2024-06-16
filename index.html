@@ -216,45 +216,29 @@
 
     <!-- table page-->
     <section class="table__section">
-        <div class="table__container">
-            <div class="table__header">
-                <h1>Shops</h1>
-            </div>
-            <div class="table__content">
-                <table>
-                    <thead>
-                    <tr>
-                        <th>Location</th>
-                        <th>Shop Name</th>
-                        <th>Kontakt</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>Olten</td>
-                        <td>GadgetHub</td>
-                        <td>gadethub.olten@store.ch</td>
-                    </tr>
-                    <tr>
-                        <td>Solothurn</td>
-                        <td>StyleCorner</td>
-                        <td>stylecorner.solothurn@store.ch</td>
-                    </tr>
-                    <tr>
-                        <td>Oensingen</td>
-                        <td>HomeEssentials</td>
-                        <td>homeessentials.oensingen@store.ch</td>
-                    </tr>
-                    <tr>
-                        <td>Kestenholz</td>
-                        <td>FashionSquare</td>
-                        <td>fashionsquare.kestenholz@store.ch</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
+    <div class="table__container">
+        <div class="table__header">
+            <h1>Shops</h1>
         </div>
-    </section>
+        <div class="table__content">
+            <table>
+                <thead>
+                <tr>
+                    <th>Location</th>
+                    <th>Shop Name</th>
+                    <th>Kontakt</th>
+                </tr>
+                </thead>
+                <tbody id="shops-table-body">
+                <!-- Rows will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+    <script src="script.js"></script>
+
 
     <!-- viewport -->
     <section class="viewport__section">
